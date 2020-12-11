@@ -14,9 +14,14 @@ const GlobalStyle = createGlobalStyle`
 
 const theme = {
   colors: {
-    primary: "#0070f3",
+    primary: "#299245",
+    gray: "#ccc",
+    grayLight: "#dbdbdb",
+    white: "#fff",
+    yellow: "#f0de00",
   },
 };
+
 export default function App({
   Component,
   pageProps,

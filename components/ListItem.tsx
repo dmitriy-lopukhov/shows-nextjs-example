@@ -1,18 +1,13 @@
 import React from "react";
 import Link from "next/link";
 import { IShow } from "../interfaces";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { getGenres } from "../utils";
-
-const shadow = css`
-  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  transition: 300ms;
-`;
+import { shadow } from "../styles";
 
 const ShowItem = styled.div`
   ${shadow}
-  background: #ffffff;
+  background: ${(props) => props.theme.colors.white};
   width: 100%;
   max-width: 270px;
   margin: 2em;

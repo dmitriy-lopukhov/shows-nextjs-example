@@ -1,5 +1,4 @@
 import React, { ReactNode } from "react";
-import Link from "next/link";
 import Head from "next/head";
 
 type Props = {
@@ -19,11 +18,7 @@ const Layout = ({ children, title = "Shows nextjs demo" }: Props) => (
       />
     </Head>
     <header>
-      <nav>
-        <Link href="/">
-          <a>Home</a>
-        </Link>
-      </nav>
+      <nav></nav>
     </header>
     {children}
   </div>
